@@ -23,12 +23,12 @@ def player_choice():
     symbol = ' '
     while symbol not in ['X', 'O']:
         symbol = input(Fore.GREEN + "Do you want to be X or O?" + Style.RESET_ALL).upper()
-    if symbol = "X":
+    if symbol == "X":
         return('X', 'O')
     else:
         return('O', 'X')
 
-def player_move(board, symbol)
+def player_move(board, symbol):
     move = -1
     while move not in range(1,10)or not board[move-1].isdigit():
         try:
